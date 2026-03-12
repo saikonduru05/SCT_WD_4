@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus | Ultra Premium Task Manager</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <!-- Aurora Background Elements -->
+  <div class="aurora-container">
+    <div class="blob magenta"></div>
+    <div class="blob blue"></div>
+    <div class="blob cyan"></div>
+  </div>
+
+  <div class="app-container">
+    <header>
+      <h1>Focus.</h1>
+      <p class="tagline">Master your day with precision.</p>
+    </header>
+
+    <div class="task-input-card">
+      <div class="input-group">
+        <label for="taskInput">New Task</label>
+        <input type="text" id="taskInput" placeholder="Enter task title...">
+        <div class="input-row">
+          <div class="field">
+            <label for="taskDate">Due Date</label>
+            <input type="date" id="taskDate">
+          </div>
+          <div class="field">
+            <label for="taskTime">Alarm Time</label>
+            <input type="time" id="taskTime">
+          </div>
+          <div class="field">
+            <label for="alarmSound">Alarm Sound</label>
+            <select id="alarmSound">
+              <option value="classic">Classic Beep</option>
+              <option value="digital">Digital Alert</option>
+              <option value="sonar">High Sonar</option>
+              <option value="chime">Melodic Chime</option>
+            </select>
+          </div>
+        </div>
+        <div class="button-group">
+          <button id="addBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Create Task
+          </button>
+          <button id="testBuzzerBtn">Test Sound</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-info">
+        <h3>Productivity</h3>
+        <span id="progressText">0%</span>
+      </div>
+      <div class="progress-track">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
